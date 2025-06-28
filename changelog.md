@@ -1,1 +1,1 @@
-* Initial build
+* Add config value to allow changing the default skin rendered on the Player Statue
