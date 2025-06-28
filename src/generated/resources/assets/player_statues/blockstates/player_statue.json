@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "player_statues:block/player_statue",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "player_statues:block/player_statue"
+    },
+    "facing=south": {
+      "model": "player_statues:block/player_statue",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "player_statues:block/player_statue",
+      "y": 270
+    }
+  }
+}

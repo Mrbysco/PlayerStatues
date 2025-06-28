@@ -1,0 +1,6 @@
+// 1.20.1	2025-06-28T19:55:55.1378665	Curios for player_statues
+72e4fe5e90a248d1ea82fb2f9ed4516c087694d6 data/player_statues/curios/entities/player_statue_entities.json
+240e1f476f220fc486f85d0132786a1374faaa46 data/player_statues/curios/slots/belt.json
+240e1f476f220fc486f85d0132786a1374faaa46 data/player_statues/curios/slots/body.json
+ea518f539e8aeb7e2af6e3d65e4c09e7dd358ef9 data/player_statues/curios/slots/feet.json
+240e1f476f220fc486f85d0132786a1374faaa46 data/player_statues/curios/slots/head.json

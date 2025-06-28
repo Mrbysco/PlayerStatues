@@ -1,0 +1,6 @@
+// 1.20.1	2025-06-28T23:06:24.4626509	Tags for minecraft:item mod id player_statues
+da9b77a85ac6d399089538da3d4211f4300d547d data/curios/tags/items/belt.json
+da9b77a85ac6d399089538da3d4211f4300d547d data/curios/tags/items/body.json
+da9b77a85ac6d399089538da3d4211f4300d547d data/curios/tags/items/feet.json
+da9b77a85ac6d399089538da3d4211f4300d547d data/curios/tags/items/head.json
+4d4cb37a2a8721ea2b3d60b9386678d7e8158f88 data/player_statues/tags/items/upgrade_item.json
