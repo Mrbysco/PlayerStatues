@@ -113,7 +113,7 @@ public class PlayerBlockEntity extends BlockEntity implements Nameable {
 
 	@Override
 	public Component getName() {
-		return this.hasCustomName() ? Component.literal(this.playerProfile != null ? playerProfile.getName() : "") : Component.translatable("entity.statues.player_statue");
+		return this.hasCustomName() ? Component.literal(this.playerProfile != null ? playerProfile.getName() : "") : Component.translatable("entity.player_statues.player_statue");
 	}
 
 	@Nullable
