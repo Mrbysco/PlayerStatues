@@ -1,1 +1,1 @@
-* Add config value to allow changing the default skin rendered on the Player Statue
+* Remove left-over debug logging from the anvil renaming code
