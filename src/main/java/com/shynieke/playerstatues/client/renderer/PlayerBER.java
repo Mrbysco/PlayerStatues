@@ -33,7 +33,7 @@ public class PlayerBER implements BlockEntityRenderer<PlayerBlockEntity> {
 	private final StatuePlayerTileModel model;
 	private final StatuePlayerTileModel slimModel;
 
-	public static final ResourceLocation defaultTexture = DefaultPlayerSkin.getDefaultSkin();
+	public static ResourceLocation defaultTexture = DefaultPlayerSkin.getDefaultSkin();
 
 	public PlayerBER(BlockEntityRendererProvider.Context context) {
 		this.model = new StatuePlayerTileModel(context.bakeLayer(ClientHandler.PLAYER_STATUE), false);
