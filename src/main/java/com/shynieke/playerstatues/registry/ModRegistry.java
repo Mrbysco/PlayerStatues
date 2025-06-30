@@ -3,6 +3,7 @@ package com.shynieke.playerstatues.registry;
 import com.shynieke.playerstatues.PlayerStatuesMod;
 import com.shynieke.playerstatues.block.PlayerStatueBlock;
 import com.shynieke.playerstatues.blockentity.PlayerBlockEntity;
+import com.shynieke.playerstatues.item.PlayerDollItem;
 import com.shynieke.playerstatues.item.PlayerStatueBlockItem;
 import com.shynieke.playerstatues.item.PlayerStatueSpawnItem;
 import net.minecraft.world.item.Item;
@@ -24,7 +25,7 @@ public class ModRegistry {
 			new PlayerStatueBlock(blockBuilder()), itemBuilder());
 
 	public static final RegistryObject<Item> PLAYER_STATUE_SPAWN_EGG = ITEMS.register("player_statue_spawn_egg", () -> new PlayerStatueSpawnItem(itemBuilder()));
-//	public static final RegistryObject<Item> UPGRADE_CORE = ITEMS.register("upgrade_core", () -> new Item(itemBuilder().stacksTo(1)));
+	public static final RegistryObject<Item> PLAYER_DOLL = ITEMS.register("player_doll", () -> new PlayerDollItem(itemBuilder().stacksTo(1)));
 	public static final RegistryObject<BlockEntityType<PlayerBlockEntity>> PLAYER = BLOCK_ENTITIES.register("player", () -> BlockEntityType.Builder.of(PlayerBlockEntity::new,
 			ModRegistry.PLAYER_STATUE.get()).build(null));
 

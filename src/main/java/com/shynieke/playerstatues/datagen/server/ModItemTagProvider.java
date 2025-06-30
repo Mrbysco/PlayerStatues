@@ -28,10 +28,10 @@ public class ModItemTagProvider extends ItemTagsProvider {
 	public void addTags(HolderLookup.@NotNull Provider lookupProvider) {
 		this.tag(PlayerStatuesMod.UPGRADE_ITEM).add(Items.PHANTOM_MEMBRANE);
 
-		this.tag(curiosTag("feet")).add(ModRegistry.PLAYER_STATUE.get().asItem());
-		this.tag(curiosTag("belt")).add(ModRegistry.PLAYER_STATUE.get().asItem());
-		this.tag(curiosTag("body")).add(ModRegistry.PLAYER_STATUE.get().asItem());
-		this.tag(curiosTag("head")).add(ModRegistry.PLAYER_STATUE.get().asItem());
+		this.tag(curiosTag("feet")).add(ModRegistry.PLAYER_STATUE.get().asItem(), ModRegistry.PLAYER_DOLL.get().asItem());
+		this.tag(curiosTag("belt")).add(ModRegistry.PLAYER_STATUE.get().asItem(), ModRegistry.PLAYER_DOLL.get().asItem());
+		this.tag(curiosTag("body")).add(ModRegistry.PLAYER_STATUE.get().asItem(), ModRegistry.PLAYER_DOLL.get().asItem());
+		this.tag(curiosTag("head")).add(ModRegistry.PLAYER_STATUE.get().asItem(), ModRegistry.PLAYER_DOLL.get().asItem());
 	}
 	
 	private TagKey<Item> curiosTag(String name) {

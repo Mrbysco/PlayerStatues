@@ -14,6 +14,7 @@ public class ModLanguageProvider extends LanguageProvider {
 
 	@Override
 	protected void addTranslations() {
+		addItem(ModRegistry.PLAYER_DOLL, "Player Doll");
 		addItem(ModRegistry.PLAYER_STATUE_SPAWN_EGG, "Player Statue Spawn Egg");
 		addBlock(ModRegistry.PLAYER_STATUE, "Player Statue");
 		addEntityType(ModEntities.PLAYER_STATUE_ENTITY, "Player Statue");

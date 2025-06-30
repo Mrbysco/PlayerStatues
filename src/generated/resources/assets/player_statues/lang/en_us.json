@@ -2,6 +2,7 @@
   "block.player_statues.player_statue": "Player Statue",
   "curios.identifier.feet": "Feet",
   "entity.player_statues.player_statue": "Player Statue",
+  "item.player_statues.player_doll": "Player Doll",
   "item.player_statues.player_statue_spawn_egg": "Player Statue Spawn Egg",
   "player_statues.modeltype.AUTO": "Auto",
   "player_statues.modeltype.DEFAULT": "Default",

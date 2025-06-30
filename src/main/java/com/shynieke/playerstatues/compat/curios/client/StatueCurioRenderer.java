@@ -2,7 +2,7 @@ package com.shynieke.playerstatues.compat.curios.client;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.math.Axis;
-import com.shynieke.playerstatues.item.PlayerStatueBlockItem;
+import com.shynieke.playerstatues.item.PlayerItem;
 import com.shynieke.playerstatues.registry.ModRegistry;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.EntityModel;
@@ -24,8 +24,8 @@ import top.theillusivec4.curios.api.client.ICurioRenderer;
 public class StatueCurioRenderer implements ICurioRenderer {
 	public static void setupRenderer(FMLClientSetupEvent event) {
 		for (RegistryObject<Item> itemObject : ModRegistry.ITEMS.getEntries()) {
-			if (itemObject.isPresent() && itemObject.get() instanceof PlayerStatueBlockItem) {
-				CuriosRendererRegistry.register(itemObject.get(), () -> new StatueCurioRenderer());
+			if (itemObject.isPresent() && itemObject.get() instanceof PlayerItem) {
+				CuriosRendererRegistry.register(itemObject.get(), StatueCurioRenderer::new);
 			}
 		}
 	}

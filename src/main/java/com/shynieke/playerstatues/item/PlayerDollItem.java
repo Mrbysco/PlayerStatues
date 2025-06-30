@@ -10,9 +10,8 @@ import net.minecraft.client.renderer.blockentity.BlockEntityRendererProvider;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtUtils;
 import net.minecraft.world.entity.EquipmentSlot;
-import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import net.minecraftforge.common.capabilities.ICapabilityProvider;
 import net.minecraftforge.fml.ModList;
@@ -22,10 +21,10 @@ import org.jetbrains.annotations.Nullable;
 import java.util.UUID;
 import java.util.function.Consumer;
 
-public class PlayerStatueBlockItem extends BlockItem implements PlayerItem {
+public class PlayerDollItem extends Item implements PlayerItem {
 
-	public PlayerStatueBlockItem(Block blockIn, Properties builder) {
-		super(blockIn, builder);
+	public PlayerDollItem(Properties builder) {
+		super(builder);
 	}
 
 	@Nullable

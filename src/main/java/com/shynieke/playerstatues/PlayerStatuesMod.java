@@ -4,7 +4,7 @@ import com.mojang.authlib.GameProfile;
 import com.mojang.logging.LogUtils;
 import com.shynieke.playerstatues.client.ClientHandler;
 import com.shynieke.playerstatues.config.PlayerStatuesConfig;
-import com.shynieke.playerstatues.item.PlayerStatueBlockItem;
+import com.shynieke.playerstatues.item.PlayerItem;
 import com.shynieke.playerstatues.network.ModNetworking;
 import com.shynieke.playerstatues.registry.ModEntities;
 import com.shynieke.playerstatues.registry.ModRegistry;
@@ -78,7 +78,7 @@ public class PlayerStatuesMod {
 
 	public void onAnvilRepair(final AnvilRepairEvent event) {
 		ItemStack result = event.getOutput();
-		if (result.getItem() instanceof PlayerStatueBlockItem && result.hasCustomHoverName()) {
+		if (result.getItem() instanceof PlayerItem && result.hasCustomHoverName()) {
 			String stackName = result.getHoverName().getString().toLowerCase(Locale.ROOT);
 			boolean validFlag = !stackName.isEmpty() && !stackName.contains(" ");
 			if (validFlag) {

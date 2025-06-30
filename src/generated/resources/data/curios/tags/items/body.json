@@ -1,5 +1,6 @@
 {
   "values": [
-    "player_statues:player_statue"
+    "player_statues:player_statue",
+    "player_statues:player_doll"
   ]
 }

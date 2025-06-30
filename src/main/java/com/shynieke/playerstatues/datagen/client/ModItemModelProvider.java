@@ -1,6 +1,7 @@
 package com.shynieke.playerstatues.datagen.client;
 
 import com.shynieke.playerstatues.PlayerStatuesMod;
+import com.shynieke.playerstatues.item.PlayerDollItem;
 import com.shynieke.playerstatues.registry.ModRegistry;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -20,10 +21,16 @@ public class ModItemModelProvider extends ItemModelProvider {
 		for (RegistryObject<Item> registryObject : ModRegistry.ITEMS.getEntries()) {
 			if (registryObject.get() instanceof BlockItem) {
 				withBlockParent(registryObject.getId());
+			} else if (registryObject.get() instanceof PlayerDollItem) {
+				playerDoll(registryObject.getId());
 			} else {
 				generatedItem(registryObject.getId());
 			}
 		}
+	}
+
+	private void playerDoll(ResourceLocation location) {
+		withExistingParent(location.getPath(), modLoc("block/player_statue"));
 	}
 
 	private void withBlockParent(ResourceLocation location) {
