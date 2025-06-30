@@ -1,1 +1,1 @@
-* Remove left-over debug logging from the anvil renaming code
+* Add a Player Doll item which just renders like a player and can not be placed.
